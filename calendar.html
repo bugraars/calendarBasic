@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./image/favicon.ico">
+    <title>Calendar</title>
+</head>
+
+<body>
+    <div id="element-calendar">
+        <div id="calendar-total" class="calendar-total">
+            <div class="calendar-top">
+                <div class="calendar-month">
+                    <button id="month-prev" class="month-button" onclick="prevMonth()"><i
+                            class="fa-solid fa-angle-left"></i></button>
+                    <span id="month-title"></span>
+                    <button id="month-next" class="month-button" onclick="nextMonth()"><i
+                            class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <ul class="days">
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                    <li>Sun</li>
+                </ul>
+            </div>
+    
+            <div id="calendar-body" class="calendar-body">
+                <!-- Tarihler bu kısıma JS'den gelecek -->
+                <!-- bodyDates += `<div class="nMonth">${i}</div>`;
+                calendarBody.innerHTML= bodyDates; -->
+            </div>
+        </div>
+    </div>
+    <script src="calendar.js"></script>
+</body>
+
+</html>
